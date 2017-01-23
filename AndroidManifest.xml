@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mbm.cse.encarta"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/encartaimgthree"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.mbm.cse.encarta.EncarTa"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mbm.cse.encarta.Flash"
+            android:label="@string/title_activity_flash"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mbm.cse.encarta.KBC"
+            android:label="@string/title_activity_kbc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.mbm.cse.encarta.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mbm.cse.encarta.QuizZone"
+            android:label="@string/title_activity_quiz_zone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mbm.cse.encarta.LabyRinth"
+            android:label="@string/title_activity_laby_rinth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mbm.cse.encarta.QuizZard"
+            android:label="@string/title_activity_quiz_zard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mbm.cse.encarta.Alohomora"
+            android:label=""
+            android:theme="@style/alo" />
+        <activity
+            android:name="com.mbm.cse.encarta.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:parentActivityName="com.mbm.cse.encarta.Alohomora"
+            android:theme="@style/AppTheme.NoActionBar.level">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbm.cse.encarta.Alohomora" />
+        </activity>
+        <activity
+            android:name="com.mbm.cse.encarta.ScrollingActivityone"
+            android:label="@string/title_activity_scrollingone"
+            android:parentActivityName="com.mbm.cse.encarta.EncarTa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mbm.cse.encarta.TheGauntletActivity"
+            android:label="@string/title_activity_the_gauntlet"
+            android:parentActivityName="com.mbm.cse.encarta.ScrollingActivityone"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.mbm.cse.encarta.Ingenieur" />
+        <activity android:name="com.mbm.cse.encarta.Developers" />
+        <activity
+            android:name="com.mbm.cse.encarta.Specials"
+            android:label="@string/title_activity_specials"
+            android:parentActivityName="com.mbm.cse.encarta.EncarTa"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbm.cse.encarta.EncarTa" />
+        </activity>
+        <activity
+            android:name="com.mbm.cse.encarta.Contact"
+            android:label="@string/title_activity_contact"
+            android:parentActivityName="com.mbm.cse.encarta.EncarTa"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbm.cse.encarta.EncarTa" />
+        </activity>
+        <activity
+            android:name="com.mbm.cse.encarta.Signin"
+            android:label="@string/title_activity_signin"
+            android:parentActivityName="com.mbm.cse.encarta.Alohomora"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbm.cse.encarta.Alohomora" />
+        </activity>
+        <activity
+            android:name="com.mbm.cse.encarta.Task"
+            android:label="@string/title_activity_task"
+            android:parentActivityName="com.mbm.cse.encarta.Signin"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbm.cse.encarta.Signin" />
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.mbm.cse.encarta.MapsActivity"
+            android:label="@string/title_activity_maps">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mbm.cse.encarta.Task" />
+        </activity>
+
+        <service android:name="com.mbm.cse.encarta.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.mbm.cse.encarta.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.mbm.cse.encarta.Sponsor" />
+    </application>
+
+</manifest>

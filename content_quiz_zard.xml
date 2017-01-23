@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_quiz_zard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mbm.cse.encarta.QuizZard"
+    tools:showIn="@layout/activity_quiz_zard">
+
+    <Button
+        android:text="DIGITAL-FORTRESS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/button4"
+        android:paddingBottom="20dp"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+
+        android:background="#ff9933"
+
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:text="QUIZ-UP"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/button5"
+        android:paddingBottom="20dp"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:background="#ff9933"
+
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:text="HEAD RUSH"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/button3"
+        android:paddingBottom="20dp"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:background="#ff9933"
+
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/quiztime"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="150dp" />
+
+    <Button
+        android:text="KBC"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/button2"
+        android:paddingBottom="20dp"
+        android:textSize="17sp"
+        android:paddingTop="10dp"
+        android:background="#ff9933"
+
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

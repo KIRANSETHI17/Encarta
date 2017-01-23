@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_encar_ta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mbm.cse.encarta.EncarTa"
+    tools:showIn="@layout/app_bar_encar_ta"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="0.16"
+        android:layout_marginTop="55dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+
+
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/about"
+
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/titlefronttextView"
+                android:background="#fff"
+                android:textColor="#000" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textonfirstpage"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            android:text="@string/contentfronttextview"
+            android:background="#fff"
+            android:textColor="#444"
+            android:layout_weight="0.66" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contentfrontbutton"
+                android:textColor="#fff"
+                android:background="#004d40"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+
+                android:padding="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+

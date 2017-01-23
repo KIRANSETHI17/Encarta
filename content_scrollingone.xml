@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mbm.cse.encarta.ScrollingActivityone"
+    tools:showIn="@layout/activity_scrollingone">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="codeMarathon"
+        android:text="CODE MARATHON"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="bandit"
+        android:text="BANDIT"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="flexYourBrain"
+        android:text="CODE MUTANTS"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="webcrats"
+        android:text="WEBCRATS"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="insomnia"
+        android:text="INSOMNIA"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="pythonPhreakers"
+        android:text="PYTHON PHREAKERS"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="klutzyCode"
+        android:text="KLUTZY CODE"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="cleanUp"
+        android:text="CLEAN-THE-BUGS"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="theGauntlet"
+        android:text="THE GAUNTLET"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="bragging"
+        android:text="BRAGGING"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="chaos"
+        android:text="CHAOS"
+        android:layout_margin="8dp"
+        android:background="@drawable/blue1"
+        android:textColor="#fff" />
+</LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

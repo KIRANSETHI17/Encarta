@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ingenieur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mbm.cse.encarta.Ingenieur"
+    android:background="@drawable/bt"
+
+    android:weightSum="1">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="248dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:text="Circuit Cipher"
+        android:textStyle="bold"
+        android:background="#58626f"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_marginBottom="16dp"
+        android:onClick="cktcipher"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Blue Print"
+        android:textStyle="bold"
+        android:background="#58626f"
+        android:textSize="17sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:onClick="blueprint"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+        <Button
+            android:text="Line Follower"
+            android:textStyle="bold"
+            android:background="#58626f"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button8"
+            android:layout_marginBottom="18dp"
+            android:onClick="Linefollowr"
+            android:layout_above="@+id/button9"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:text="Open Hardware"
+            android:textStyle="bold"
+            android:background="#58626f"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button9"
+            android:layout_marginBottom="18dp"
+            android:onClick="Openhardware"
+            android:layout_above="@+id/button10"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:text="Open Software"
+            android:textStyle="bold"
+            android:background="#58626f"
+            android:textSize="17sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button10"
+            android:layout_marginBottom="18dp"
+            android:onClick="Opensoftware"
+
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
